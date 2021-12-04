@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4800655994352408774}
   - component: {fileID: 4800655994352408773}
   - component: {fileID: 4800655994352408772}
+  - component: {fileID: -4216915877637254684}
   m_Layer: 0
   m_Name: Perso
   m_TagString: Untagged
@@ -102,3 +103,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-4216915877637254684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4800655994352408771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b33cf3f14a81c984c8dadc5285340fc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Arrivee: {fileID: 0}
+  Grid: {fileID: 0}
+  Pathfinder: {fileID: 0}
+  Speed: 10
+  Vie: 2
+  Depart: {fileID: 4800655994352408774}
+  SpwanSounds: []

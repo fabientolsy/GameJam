@@ -8,12 +8,14 @@ using static UnityEngine.GraphicsBuffer;
 public class Joueur : MonoBehaviour 
 {
     public Path CurrentPath;
-    public Transform Depart;
+    
     public Transform Arrivee;
     public Grid Grid;
     public Pathfinder Pathfinder;
     public float Speed = 10;
     public int Vie = 2;
+
+    public Transform Depart;
 
     public AudioClip[] SpwanSounds;
 
@@ -28,7 +30,22 @@ public class Joueur : MonoBehaviour
     private void Awake()
     {
         m_AS = gameObject.gameObject.GetComponent<AudioSource>();
-        Depart = gameObject.GetComponent<Transform>();
+        
+
+    }
+
+    private void Start()
+    {
+        // Jouer un son
+        /*int soundId = Random.Range(0, SpwanSounds.Length);
+        m_AS.PlayOneShot(SpwanSounds[soundId]);*/
+
+        Depart.transform.position = gameObject.GetComponent<Transform>().position;
+    }
+
+    private void Update()
+    {
+        //Depart = gameObject.GetComponent<Transform>();
 
         if (Event.current.type == EventType.MouseDown)
         {
@@ -45,19 +62,6 @@ public class Joueur : MonoBehaviour
 
             Arrivee.transform.position = t_WorldPos;
         }
-
-    }
-
-    private void Start()
-    {
-        // Jouer un son
-        /*int soundId = Random.Range(0, SpwanSounds.Length);
-        m_AS.PlayOneShot(SpwanSounds[soundId]);*/
-    }
-
-    private void Update()
-    {
-       
         if (CurrentPath == null)
             CalculatePath();
 
