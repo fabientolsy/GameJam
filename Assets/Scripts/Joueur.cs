@@ -9,9 +9,7 @@ public class Joueur : MonoBehaviour
 {
     public Path CurrentPath;
     
-    public Transform Arrivee;
-    public Grid Grid;
-    public Pathfinder Pathfinder;
+    public Vector3 Arrivee;
     public float Speed = 10;
     public int Vie = 2;
 
@@ -23,8 +21,10 @@ public class Joueur : MonoBehaviour
     private AudioSource m_AS;
 
     private Grid m_Grid;
+    private Pathfinder m_Pathfinder;
 
-    
+
+
 
 
     private void Awake()
@@ -41,16 +41,21 @@ public class Joueur : MonoBehaviour
         m_AS.PlayOneShot(SpwanSounds[soundId]);*/
 
         Depart.transform.position = gameObject.GetComponent<Transform>().position;
+        m_Grid = GameObject.Find("Grid").GetComponent<Grid>();
+        m_Pathfinder = m_Grid.GetComponent<Pathfinder>();
     }
 
     private void Update()
     {
         //Depart = gameObject.GetComponent<Transform>();
 
-        if (Event.current.type == EventType.MouseDown)
+        if (Input.GetMouseButtonDown(0))
         {
             // Trouver la position cliquee 
-            Vector3 t_ClickPos = HandleUtility.GUIPointToWorldRay(Event.current.mousePosition).origin;
+            //Vector3 t_ClickPos = HandleUtility.GUIPointToWorldRay(Event.current.mousePosition).origin;
+            Vector3 t_ClickPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Debug.Log(Input.mousePosition);
+            Debug.Log("Joueur Update" + t_ClickPos);
 
             // Transformer la position dans le monde de la scene en position dans la grille
             Vector2Int t_GridPos = m_Grid.WorldToGrid(t_ClickPos);
@@ -60,15 +65,21 @@ public class Joueur : MonoBehaviour
             Vector3 t_WorldPos = m_Grid.GridToWorld(t_GridPos);
             Debug.Log("Word Click at " + t_WorldPos);
 
-            Arrivee.transform.position = t_WorldPos;
-        }
-        if (CurrentPath == null)
+            // Spawnner une tuile
+            if (m_Grid.SelectedTile < 0 || m_Grid.SelectedTile >= m_Grid.AvaileTuiles.Length)
+                throw new GridException("Selected out of bounds !");
+
+            Arrivee = t_WorldPos;
+
             CalculatePath();
+        }
 
         if (CurrentPath == null)
+        {
             return;
+        }
 
-        if (ReachedCheckpoint())
+        if ( ReachedCheckpoint())
         {
 
             CalculatePath();
@@ -80,12 +91,12 @@ public class Joueur : MonoBehaviour
             m_TargetCheckpoint = 1;
 
             // Detruie si l'ennemi arrive a la fin du parcours
-            if(m_TargetCheckpoint == CurrentPath.Checkpoints.Count)
+            /*if(m_TargetCheckpoint == CurrentPath.Checkpoints.Count)
             {
                 Remove();
                 GameManager.Instance.VieJoueur -= 1;
                 return;
-            }
+            }*/
 
             // Detruire s l'ennemi n'a plus de vie
             if (Vie <= 0)
@@ -124,10 +135,11 @@ public class Joueur : MonoBehaviour
 
     private void CalculatePath()
     {
-        Tile t_StartTile = Grid.GetTile(Grid.WorldToGrid(transform.position));
-        Tile t_EndTile = Grid.GetTile(Grid.WorldToGrid(Arrivee.position));
+        Tile t_StartTile = m_Grid.GetTile(m_Grid.WorldToGrid(transform.position));
+        Tile t_EndTile = m_Grid.GetTile(m_Grid.WorldToGrid(Arrivee));
 
-        CurrentPath = Pathfinder.GetPath(t_StartTile, t_EndTile, false);
+        CurrentPath = m_Pathfinder.GetPath(t_StartTile, t_EndTile, true);
+        Debug.Log(CurrentPath);
     }
 
     private void OnDrawGizmosSelected()

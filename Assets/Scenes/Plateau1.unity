@@ -4126,6 +4126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 276097503}
   - component: {fileID: 276097502}
+  - component: {fileID: 276097504}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -4619,6 +4620,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &276097504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276097501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58eaab9184dca8444aedbc08fcc9d352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &280160739
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30934,7 +30947,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 73.479935
-  orthographic: 0
+  orthographic: 1
   orthographic size: 8
   m_Depth: -1
   m_CullingMask:
@@ -36108,7 +36121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4800655994352408772, guid: 929dd0e7a862cda42a9ef05240dc3716, type: 3}
       propertyPath: m_WasSpriteAssigned
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4800655994352408774, guid: 929dd0e7a862cda42a9ef05240dc3716, type: 3}
       propertyPath: m_RootOrder

@@ -17,8 +17,8 @@ public class Spawner : MonoBehaviour
         GameObject newJoueur = Instantiate(Joueur, Start.position, Quaternion.identity);
 
         Joueur t_Joueur = newJoueur.GetComponent<Joueur>();
-        t_Joueur.Pathfinder = Pathfinder;
-        t_Joueur.Grid = Grid;
-        t_Joueur.Arrivee = End;
+        /*t_Joueur.Pathfinder = Pathfinder;
+        t_Joueur.Grid = Grid;*/
+        //t_Joueur.Arrivee = End;
     }
 }
