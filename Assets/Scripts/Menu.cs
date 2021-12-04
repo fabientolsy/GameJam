@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
-    public GameObject fenetreCredits;
     public Text textTitre;
 
     private void Start()
