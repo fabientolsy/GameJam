@@ -15,7 +15,7 @@ public class Menu : MonoBehaviour
     public void BoutonJouer()
     {
         Debug.Log("Jouer !");
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Plateau1");
     }
 
     public void BoutonQuitter()
