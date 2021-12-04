@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using System.Linq;
+using static UnityEngine.GraphicsBuffer;
 
-public class Joueur : MonoBehaviour
+public class Joueur : MonoBehaviour 
 {
     public Path CurrentPath;
+    public Transform Depart;
     public Transform Arrivee;
     public Grid Grid;
     public Pathfinder Pathfinder;
@@ -16,9 +20,31 @@ public class Joueur : MonoBehaviour
     private int m_TargetCheckpoint;
     private AudioSource m_AS;
 
+    private Grid m_Grid;
+
+    
+
+
     private void Awake()
     {
         m_AS = gameObject.gameObject.GetComponent<AudioSource>();
+        Depart = gameObject.GetComponent<Transform>();
+
+        if (Event.current.type == EventType.MouseDown)
+        {
+            // Trouver la position cliquee 
+            Vector3 t_ClickPos = HandleUtility.GUIPointToWorldRay(Event.current.mousePosition).origin;
+
+            // Transformer la position dans le monde de la scene en position dans la grille
+            Vector2Int t_GridPos = m_Grid.WorldToGrid(t_ClickPos);
+            Debug.Log("Grid Click at " + t_GridPos);
+
+            // Transformer la position dans la grille en position dans le monde de la scene, pour trouver le centre de la cellule
+            Vector3 t_WorldPos = m_Grid.GridToWorld(t_GridPos);
+            Debug.Log("Word Click at " + t_WorldPos);
+
+            Arrivee.transform.position = t_WorldPos;
+        }
 
     }
 
