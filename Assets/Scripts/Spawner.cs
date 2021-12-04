@@ -14,11 +14,11 @@ public class Spawner : MonoBehaviour
     {
         Vector3 t_StartPosition = Grid.GridToWorld(Grid.WorldToGrid(Start.position));
 
-        GameObject newEnnemi = Instantiate(Joueur, Start.position, Quaternion.identity);
+        GameObject newJoueur = Instantiate(Joueur, Start.position, Quaternion.identity);
 
-        Joueur t_Ennemi = newEnnemi.GetComponent<Joueur>();
-        t_Ennemi.Pathfinder = Pathfinder;
-        t_Ennemi.Grid = Grid;
-        t_Ennemi.Arrivee = End;
+        Joueur t_Joueur = newJoueur.GetComponent<Joueur>();
+        t_Joueur.Pathfinder = Pathfinder;
+        t_Joueur.Grid = Grid;
+        t_Joueur.Arrivee = End;
     }
 }

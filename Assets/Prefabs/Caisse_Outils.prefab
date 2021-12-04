@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 545436743064686631}
   - component: {fileID: 6909341163618574952}
+  - component: {fileID: -9168489473344882722}
   m_Layer: 0
   m_Name: Caisse_Outils
   m_TagString: Untagged
@@ -82,3 +83,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-9168489473344882722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5921977108463840486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 964842be1fbe7f2489fe06c1781cf3eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: 0
+  y: 0
+  BaseCost: 20
