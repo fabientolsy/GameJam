@@ -1,31 +1,25 @@
 fileFormatVersion: 2
-guid: 279984fbf86bd624087fdc3a561f5bdf
+guid: fc44703d53b68a548bec2f82ad7ed233
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5207544987158716770
-    second: Man_0
+      213: 4073088990134836896
+    second: Main_chara_0
   - first:
-      213: -2250128633291984448
-    second: Man_1
+      213: 1220803734710884809
+    second: Main_chara_1
   - first:
-      213: -672509754820783249
-    second: Man_2
+      213: -3344704382177680595
+    second: Main_chara_2
   - first:
-      213: -5657222779149273551
-    second: Man_3
+      213: -8248600958749936999
+    second: Main_chara_3
   - first:
-      213: -761530471776030657
-    second: Man_4
+      213: 4477237688881004496
+    second: Main_chara_4
   - first:
-      213: -526423914407090313
-    second: Man_5
-  - first:
-      213: 5427590300147334247
-    second: Man_6
-  - first:
-      213: -4532698330198780497
-    second: Man_7
+      213: -1249117453576542656
+    second: Main_chara_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -44,7 +38,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -57,7 +51,7 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 1
-    aniso: 2
+    aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
@@ -151,169 +145,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Man_0
+      name: Main_chara_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 418.5
-        width: 132.5
-        height: 139.5
+        y: 0
+        width: 138.83333
+        height: 139
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2612677339ae44840800000000000000
-      internalID: 5207544987158716770
+      spriteID: 0ae9a8b3bd4868830800000000000000
+      internalID: 4073088990134836896
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Man_1
+      name: Main_chara_1
       rect:
         serializedVersion: 2
-        x: 132
-        y: 418.5
-        width: 132.5
-        height: 139.5
+        x: 138
+        y: 0
+        width: 138.83333
+        height: 139
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c132b10eefe5c0e0800000000000000
-      internalID: -2250128633291984448
+      spriteID: 9c999e3578a21f010800000000000000
+      internalID: 1220803734710884809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Man_2
+      name: Main_chara_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 279.5
-        width: 132.5
-        height: 139.5
+        x: 276
+        y: 0
+        width: 138.83333
+        height: 139
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f631cebe0f3caa6f0800000000000000
-      internalID: -672509754820783249
+      spriteID: d236b9dd5193591d0800000000000000
+      internalID: -3344704382177680595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Man_3
+      name: Main_chara_3
       rect:
         serializedVersion: 2
-        x: 132
-        y: 279.5
-        width: 132.5
-        height: 139.5
+        x: 414
+        y: 0
+        width: 138.83333
+        height: 139
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1363f890bd18d71b0800000000000000
-      internalID: -5657222779149273551
+      spriteID: 99273c78125178d80800000000000000
+      internalID: -8248600958749936999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Man_4
+      name: Main_chara_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 140.5
-        width: 132.5
-        height: 139.5
+        x: 552
+        y: 0
+        width: 138.83333
+        height: 139
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f30772812108e65f0800000000000000
-      internalID: -761530471776030657
+      spriteID: 0df3eb4e4f7522e30800000000000000
+      internalID: 4477237688881004496
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Man_5
+      name: Main_chara_5
       rect:
         serializedVersion: 2
-        x: 132
-        y: 140.5
-        width: 132.5
-        height: 139.5
+        x: 690
+        y: 0
+        width: 138.83333
+        height: 139
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 777ae7c2d34c1b8f0800000000000000
-      internalID: -526423914407090313
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Man_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1.5
-        width: 132.5
-        height: 139.5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 76c33a21f9ca25b40800000000000000
-      internalID: 5427590300147334247
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Man_7
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 1.5
-        width: 132.5
-        height: 139.5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa5de7a42ee9811c0800000000000000
-      internalID: -4532698330198780497
+      spriteID: 04664d84b4e3aaee0800000000000000
+      internalID: -1249117453576542656
       vertices: []
       indices: 
       edges: []
@@ -321,7 +273,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d0f9435c7363a644d86fe4974d26e711
+    spriteID: eaab83b3f672e854badc3068c7ee50e9
     internalID: 0
     vertices: []
     indices: 
