@@ -290,7 +290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &18297011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -532,7 +532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &39288183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1144,7 +1144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &84529808
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1386,7 +1386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &108292075
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1554,7 +1554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &109740702
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1870,7 +1870,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &119061656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2038,7 +2038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &131012473
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2428,7 +2428,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &155583791
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3651,7 +3651,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &248958089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3967,7 +3967,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &267829604
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4725,7 +4725,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &282636611
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5263,7 +5263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &334389343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5431,7 +5431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &336798908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6043,7 +6043,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &381409711
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6507,7 +6507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &412654686
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7119,7 +7119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &450930677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7761,7 +7761,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &482581127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7855,7 +7855,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &484492810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8023,7 +8023,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &487578020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8635,7 +8635,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &524581915
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9247,7 +9247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &549663549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9415,7 +9415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &550871101
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9583,7 +9583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &553438709
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9677,7 +9677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &554688057
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9919,7 +9919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &564897437
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10235,7 +10235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &580927194
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11151,7 +11151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &640854427
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11393,7 +11393,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &642441617
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11709,7 +11709,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &655554401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12247,7 +12247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &690458085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12415,7 +12415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &709847168
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12583,7 +12583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &713175806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13269,7 +13269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &753520824
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13437,7 +13437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &770820513
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13679,7 +13679,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &802953852
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13921,7 +13921,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &814385364
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14089,7 +14089,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &849645925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14997,7 +14997,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &922979439
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15165,7 +15165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &942844711
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15333,7 +15333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &945071173
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15427,7 +15427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &960532774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15521,7 +15521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &962006568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15911,7 +15911,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &984941023
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17123,7 +17123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1064892393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17661,7 +17661,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1106114294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17977,7 +17977,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1123644554
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18293,7 +18293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1156814678
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18461,7 +18461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1160156752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18629,7 +18629,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1172207302
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18723,7 +18723,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1178758041
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19705,7 +19705,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1237940050
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19799,7 +19799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1242431334
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19967,7 +19967,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1255252539
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20061,7 +20061,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1257279775
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20303,7 +20303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1273153634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20841,7 +20841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1300125571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21305,7 +21305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1324766300
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21399,7 +21399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1329475218
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21493,7 +21493,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1331133480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21587,7 +21587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1334400720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21681,7 +21681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1346943624
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22145,7 +22145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1378905806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22387,7 +22387,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1408087111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22851,7 +22851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1430868942
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23315,7 +23315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1459280135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23557,7 +23557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1466252643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24465,7 +24465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1540772411
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25003,7 +25003,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1566221336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25097,7 +25097,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1574142738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25857,7 +25857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1609457076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26173,7 +26173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1631688533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27525,7 +27525,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1725667026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27619,7 +27619,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1726877053
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27787,7 +27787,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1728667861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27881,7 +27881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1731658281
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27975,7 +27975,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1733571928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28291,7 +28291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1765372412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28385,7 +28385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1772019151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28923,7 +28923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1797851851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29461,7 +29461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1813819517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29703,7 +29703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1817580360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29797,7 +29797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1820385797
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30261,7 +30261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1844083976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30725,7 +30725,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1867124524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30819,7 +30819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1878278095
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31177,7 +31177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1894933431
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31271,7 +31271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1895435851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31587,7 +31587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1902346766
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32125,7 +32125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1935370268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32515,7 +32515,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1943390521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32979,7 +32979,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1972263282
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33221,7 +33221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &1980933474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33685,7 +33685,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &2023622617
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33853,7 +33853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &2029314835
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34317,7 +34317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &2048145939
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34707,7 +34707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &2071929447
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35393,7 +35393,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &2119081287
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35717,7 +35717,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &2133825261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36033,7 +36033,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  BaseCost: 20
+  BaseCost: 0
 --- !u!1001 &2146731709
 PrefabInstance:
   m_ObjectHideFlags: 0
