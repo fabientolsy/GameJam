@@ -18,6 +18,8 @@ public class Grid : MonoBehaviour
 
     public Color GridColor = Color.green;
 
+    public GameObject[] Objets;
+
     [Space]
     [Header("Grid Editor")]
 
@@ -36,6 +38,26 @@ public class Grid : MonoBehaviour
             t.x = (uint)t_GridPos.x;
             t.y = (uint)t_GridPos.y;
         }
+    }
+
+    private void Start()
+    {
+        
+        for(int i = 0; i<Objets.Length; i++ )
+        {
+            float PositionX = Random.Range(1, ColumnCount - 1);
+            float PositionY = Random.Range(1, RowCount - 1);
+            Vector2 ObjetPos = new Vector2(PositionY, PositionX);
+            Vector2Int t_GridPos = WorldToGrid(ObjetPos);
+            Vector3 t_WorldPos = GridToWorld(t_GridPos);
+
+            int ObjetsAleatoire = Random.Range(0, Objets.Length);
+
+            GameObject randPrefab = Objets[ObjetsAleatoire];
+            randPrefab.transform.position = ObjetPos;
+            Instantiate(Objets[ObjetsAleatoire], new Vector3(t_WorldPos.x - CellSize / 2, t_WorldPos.y, 0), transform.rotation);
+        }
+        
     }
 
     private void OnDrawGizmos()
