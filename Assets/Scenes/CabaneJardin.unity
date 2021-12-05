@@ -208,8 +208,9 @@ GameObject:
   - component: {fileID: 1665676}
   - component: {fileID: 1665675}
   - component: {fileID: 1665677}
+  - component: {fileID: 1665678}
   m_Layer: 0
-  m_Name: Tiroir
+  m_Name: TiroirKeyGreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -290,7 +291,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0016229898, y: 0.11037625}
@@ -306,6 +307,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.54585505, y: 0.393276}
   m_EdgeRadius: 0
+--- !u!114 &1665678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a22cf46c29b25a4a8e49c10d71e067f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyType: 0
 --- !u!1001 &7294340
 PrefabInstance:
   m_ObjectHideFlags: 0
