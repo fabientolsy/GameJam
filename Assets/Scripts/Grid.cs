@@ -38,12 +38,8 @@ public class Grid : MonoBehaviour
             t.x = (uint)t_GridPos.x;
             t.y = (uint)t_GridPos.y;
         }
-    }
 
-    private void Start()
-    {
-        
-        for(int i = 0; i<Objets.Length; i++ )
+        for (int i = 0; i < Objets.Length; i++)
         {
             float PositionX = Random.Range(1, ColumnCount - 1);
             float PositionY = Random.Range(1, RowCount - 1);
@@ -55,9 +51,17 @@ public class Grid : MonoBehaviour
 
             GameObject randPrefab = Objets[ObjetsAleatoire];
             randPrefab.transform.position = ObjetPos;
-            Instantiate(Objets[ObjetsAleatoire], new Vector3(t_WorldPos.x - CellSize / 2, t_WorldPos.y, 0), transform.rotation);
+            Tile tileAdd = Instantiate(Objets[ObjetsAleatoire], new Vector3(t_WorldPos.x, t_WorldPos.y, 0), transform.rotation).GetComponent<Tile>();
+            tileAdd.x = (uint)t_GridPos.x;
+            tileAdd.y = (uint)t_GridPos.y;
+
+           m_Tiles.Add(tileAdd);
+
+            Tile s_tuile = GetTile(t_GridPos);
+            m_Tiles.Remove(s_tuile);
+            Destroy(s_tuile.gameObject);
+            Debug.Log(s_tuile.gameObject);            
         }
-        
     }
 
     private void OnDrawGizmos()
