@@ -14,6 +14,7 @@ public class KeyDoor : MonoBehaviour
 
     public void OpenDoor()
     {
-        SceneManager.LoadScene("Plateau1");
+        SoundManager.PlaySound("Door");
+        SceneManager.LoadScene("Plateau2");
     }
 }
