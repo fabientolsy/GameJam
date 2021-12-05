@@ -29,7 +29,7 @@ public class KeyHolder : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Key key = GetComponent<Collider>().GetComponent<Key>();
+        Key key = GetComponent<Collider>().GetComponent<key>();
         if (key != null)
         {
             AddKey(key.GetKeyType());

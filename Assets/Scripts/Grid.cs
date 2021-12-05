@@ -18,12 +18,11 @@ public class Grid : MonoBehaviour
 
     public Color GridColor = Color.green;
 
-    public GameObject[] Objets;
-
     [Space]
     [Header("Grid Editor")]
 
     public GameObject[] AvaileTuiles;
+    public GameObject[] RandomObject;
 
     public int SelectedTile;
 
@@ -39,7 +38,7 @@ public class Grid : MonoBehaviour
             t.y = (uint)t_GridPos.y;
         }
 
-        for (int i = 0; i < Objets.Length; i++)
+        for (int i = 0; i < RandomObject.Length; i++)
         {
             float PositionX = Random.Range(1, ColumnCount - 1);
             float PositionY = Random.Range(1, RowCount - 1);
@@ -52,40 +51,174 @@ public class Grid : MonoBehaviour
             if (t_tileWMur != AvaileTuiles[0])
             {
 
-                int ObjetsAleatoire = Random.Range(0, Objets.Length);
+                int ObjetsAleatoire = Random.Range(0, RandomObject.Length);
 
                 if (t_WorldPos.x == ColumnCount || t_WorldPos.x == ColumnCount - 1)
                 {
-                    t_WorldPos.x = t_WorldPos.x - 3;
+                    t_WorldPos.x = t_WorldPos.x - 1;
                 }
 
                 if (t_WorldPos.x == 0 || t_WorldPos.x == 1)
                 {
-                    t_WorldPos.x = t_WorldPos.x + 3;
+                    t_WorldPos.x = t_WorldPos.x + 1;
                 }
 
                 if (t_WorldPos.y == RowCount || t_WorldPos.y == RowCount - 1)
                 {
-                    t_WorldPos.y = t_WorldPos.y - 3;
+                    t_WorldPos.y = t_WorldPos.y - 1;
                 }
 
                 if (t_WorldPos.y == 0 || t_WorldPos.y == 1)
                 {
-                    t_WorldPos.y = t_WorldPos.y + 3;
+                    t_WorldPos.y = t_WorldPos.y + 1;
+                }            
+
+                GameObject randPrefab = RandomObject[ObjetsAleatoire];
+
+                // Variables nécessaires pour le switch
+                GameObject randPrefabp2;
+                GameObject randPrefabp3;
+                GameObject randPrefabp4;
+
+                float PositionX2;
+                float PositionX3;
+                float PositionX4;
+
+                float PositionY2;
+                float PositionY3;
+                float PositionY4;
+
+                Vector2 ObjetPos2;
+                Vector2 ObjetPos3;
+                Vector2 ObjetPos4;
+
+                Vector2Int t_GridPos2;
+                Vector2Int t_GridPos3;
+                Vector2Int t_GridPos4;
+
+                Vector3 t_WordPos2;
+                Vector3 t_WordPos3;
+                Vector3 t_WordPos4;
+
+                switch (randPrefab)
+                {
+                    
+                    case RandomObject[0]:
+                        randPrefab.transform.position = ObjetPos;
+
+                        randPrefabp2 = RandomObject[1];
+
+                        PositionX2 = PositionX - 1;
+                        ObjetPos2 = new Vector2(PositionX2, PositionY);
+                        t_GridPos2 = WorldToGrid(ObjetPos2);
+                        t_WordPos2 = GridToWorld(t_GridPos2);
+
+                        Instantiate(RandomObject[ObjetsAleatoire], new Vector3(t_WorldPos.x, t_WorldPos.y, 0), transform.rotation).GetComponent<Tile>();
+                        Instantiate(RandomObject[1], new Vector3(t_WordPos2.x, t_WorldPos.y,0), transform.rotation).GetComponent<Tile>();
+                        //Instantiate(RandomObject[ObjetsAleatoire], new Vector3(t_WorldPos.x, t_WorldPos.y, 0), transform.rotation).GetComponent<Tile>();
+
+                        return;
+
+                    case RandomObject[1]:
+                        randPrefab.transform.position = ObjetPos;
+
+                        randPrefabp2 = RandomObject[0];
+
+                        PositionX2 = PositionX + 1;
+                        ObjetPos2 = new Vector2(PositionX2, PositionY);
+                        t_GridPos2 = WorldToGrid(ObjetPos2);
+                        t_WordPos2 = GridToWorld(t_GridPos2);
+
+                        Instantiate(RandomObject[ObjetsAleatoire], new Vector3(t_WorldPos.x, t_WorldPos.y, 0), transform.rotation).GetComponent<Tile>();
+                        Instantiate(RandomObject[1], new Vector3(t_WordPos2.x, t_WorldPos.y, 0), transform.rotation).GetComponent<Tile>();
+                        //Instantiate(RandomObject[ObjetsAleatoire], new Vector3(t_WorldPos.x, t_WorldPos.y, 0), transform.rotation).GetComponent<Tile>();
+                        return;
+
+                    case RandomObject[2]:
+                        randPrefab.transform.position = ObjetPos;
+
+                        randPrefabp2 = RandomObject[3];
+
+                        PositionX2 = PositionX - 1;
+                        ObjetPos2 = new Vector2(PositionX2, PositionY);
+                        t_GridPos2 = WorldToGrid(ObjetPos2);
+                        t_WordPos2 = GridToWorld(t_GridPos2);
+
+                        Instantiate(RandomObject[ObjetsAleatoire], new Vector3(t_WorldPos.x, t_WorldPos.y, 0), transform.rotation).GetComponent<Tile>();
+                        Instantiate(RandomObject[3], new Vector3(t_WordPos2.x, t_WorldPos.y, 0), transform.rotation).GetComponent<Tile>();
+                        //Instantiate(RandomObject[ObjetsAleatoire], new Vector3(t_WorldPos.x, t_WorldPos.y, 0), transform.rotation).GetComponent<Tile>();
+
+                        return;
+
+                    case RandomObject[3]:
+                        randPrefab.transform.position = ObjetPos;
+
+                        randPrefabp2 = RandomObject[2];
+
+                        PositionX2 = PositionX + 1;
+                        ObjetPos2 = new Vector2(PositionX2, PositionY);
+                        t_GridPos2 = WorldToGrid(ObjetPos2);
+                        t_WordPos2 = GridToWorld(t_GridPos2);
+
+                        Instantiate(RandomObject[ObjetsAleatoire], new Vector3(t_WorldPos.x, t_WorldPos.y, 0), transform.rotation).GetComponent<Tile>();
+                        Instantiate(RandomObject[2], new Vector3(t_WordPos2.x, t_WorldPos.y, 0), transform.rotation).GetComponent<Tile>();
+                        //Instantiate(RandomObject[ObjetsAleatoire], new Vector3(t_WorldPos.x, t_WorldPos.y, 0), transform.rotation).GetComponent<Tile>();
+                        return;
+
+                    case RandomObject[4]: // Morceau de tapis bas droite
+                        randPrefab.transform.position = ObjetPos;
+
+                        // Morceau bas gauche
+                        randPrefabp2 = RandomObject[5];
+
+                        // Morceau haut droite
+                        randPrefabp3 = RandomObject[6];
+
+                        // Morceau haut gauche
+                        randPrefabp4 = RandomObject[7];
+
+                        PositionX2 = PositionX - 1;
+                        PositionY3 = PositionY + 1;
+
+                        ObjetPos2 = new Vector2(PositionX2, PositionY);
+                        ObjetPos3 = new Vector2(PositionX, PositionY3);
+                        ObjetPos4 = new Vector2(PositionX2, PositionY3);
+
+                        t_GridPos2 = WorldToGrid(ObjetPos2);
+                        t_GridPos3 = WorldToGrid(ObjetPos3);
+                        t_GridPos4 = WorldToGrid(ObjetPos4);
+
+                        t_WordPos2 = GridToWorld(t_GridPos2);
+                        t_WordPos3 = GridToWorld(t_GridPos3);
+                        t_WordPos4 = GridToWorld(t_GridPos4);
+
+                        Instantiate(RandomObject[ObjetsAleatoire], new Vector3(t_WorldPos.x, t_WorldPos.y, 0), transform.rotation).GetComponent<Tile>();
+                        
+                        // Morceau bas gauche
+                        Instantiate(RandomObject[5], new Vector3(t_WordPos2.x, t_WorldPos.y,0), transform.rotation).GetComponent<Tile>();
+                        // Morceau haut droite
+                        Instantiate(RandomObject[6], new Vector3(t_WorldPos.x, t_WordPos3.y,0), transform.rotation).GetComponent<Tile>();
+
+                        // Morceau haut gauche
+                        Instantiate(RandomObject[7], new Vector3(t_WordPos2.x, t_WordPos3.y,0), transform.rotation).GetComponent<Tile>();
+
+                    default:
+                        randPrefab.transform.position = ObjetPos;
+                        Tile tileAdd = Instantiate(RandomObject[ObjetsAleatoire], new Vector3(t_WorldPos.x, t_WorldPos.y, 0), transform.rotation).GetComponent<Tile>();
+                        tileAdd.x = (uint)t_GridPos.x;
+                        tileAdd.y = (uint)t_GridPos.y;
+
+                        m_Tiles.Add(tileAdd);
+
+                        Tile s_tuile = GetTile(t_GridPos);
+                        m_Tiles.Remove(s_tuile);
+                        Destroy(s_tuile.gameObject);
+                        Debug.Log(s_tuile.gameObject);
+                        return;
+
                 }
 
-                GameObject randPrefab = Objets[ObjetsAleatoire];
-                randPrefab.transform.position = ObjetPos;
-                Tile tileAdd = Instantiate(Objets[ObjetsAleatoire], new Vector3(t_WorldPos.x, t_WorldPos.y, 0), transform.rotation).GetComponent<Tile>();
-                tileAdd.x = (uint)t_GridPos.x;
-                tileAdd.y = (uint)t_GridPos.y;
-
-                m_Tiles.Add(tileAdd);
-
-                Tile s_tuile = GetTile(t_GridPos);
-                m_Tiles.Remove(s_tuile);
-                Destroy(s_tuile.gameObject);
-                Debug.Log(s_tuile.gameObject);
+                
             }
             else
             {
