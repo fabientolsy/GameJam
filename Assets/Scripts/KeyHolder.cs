@@ -32,7 +32,7 @@ public class KeyHolder : MonoBehaviour
         Key key = collider.GetComponent<key>();
         if (key != null)
         {
-            AddKey(key.GetKeyType())
+            AddKey(key.GetKeyType());
             Destroy(key.gameObject);
         }
     }
