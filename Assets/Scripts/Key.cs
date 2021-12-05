@@ -8,7 +8,7 @@ public class Key : MonoBehaviour
 
     public enum KeyType
     {
-        Red,
+        Orange,
         Green,
         Blue
     }
