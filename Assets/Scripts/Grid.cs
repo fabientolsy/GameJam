@@ -103,7 +103,11 @@ public class Grid : MonoBehaviour
                 switch (ObjetsAleatoire)
                 {
                     
+<<<<<<< Updated upstream
                     case 0:
+=======
+                    case RandomObject[0]: // Armoire droite
+>>>>>>> Stashed changes
                         randPrefab.transform.position = ObjetPos;
 
                         randPrefabp2 = RandomObject[1];
@@ -119,8 +123,13 @@ public class Grid : MonoBehaviour
 
                         return;
 
+<<<<<<< Updated upstream
                     case 1:
                         randPrefab.transform.position = ObjetPos;
+=======
+                    case RandomObject[1]: // Armoire gauche
+                        randPrefab.transform.position = ObjetPos; 
+>>>>>>> Stashed changes
 
                         randPrefabp2 = RandomObject[0];
 
@@ -134,7 +143,11 @@ public class Grid : MonoBehaviour
                         //Instantiate(RandomObject[ObjetsAleatoire], new Vector3(t_WorldPos.x, t_WorldPos.y, 0), transform.rotation).GetComponent<Tile>();
                         return;
 
+<<<<<<< Updated upstream
                     case 2:
+=======
+                    case RandomObject[2]:  // Commode droite
+>>>>>>> Stashed changes
                         randPrefab.transform.position = ObjetPos;
 
                         randPrefabp2 = RandomObject[3];
@@ -150,7 +163,11 @@ public class Grid : MonoBehaviour
 
                         return;
 
+<<<<<<< Updated upstream
                     case 3:
+=======
+                    case RandomObject[3]: // Commode gauche
+>>>>>>> Stashed changes
                         randPrefab.transform.position = ObjetPos;
 
                         randPrefabp2 = RandomObject[2];
