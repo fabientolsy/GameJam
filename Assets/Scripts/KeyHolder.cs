@@ -55,5 +55,6 @@ public class KeyHolder : MonoBehaviour
 
         DoorCagibitIn doorCagibitin = collision.gameObject.GetComponent<DoorCagibitIn>();
         DoorCagibit doorCagibit = collision.gameObject.GetComponent<DoorCagibit>();
+        DoorRoom doorRoom = collision.gameObject.GetComponent<DoorRoom>();
     }
 }
