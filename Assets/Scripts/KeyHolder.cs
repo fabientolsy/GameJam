@@ -38,13 +38,13 @@ public class KeyHolder : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Key key = Collider.GetComponent<Key>();
+        Key key = GetComponent<Collider>().GetComponent<Key>();
         if (key != null)
         {
             AddKey(key.GetKeyType());
         }
 
-        KeyDoor keyDoor = collider.GetComponent<KeyDoor>();
+        KeyDoor keyDoor = GetComponent<Collider>().GetComponent<KeyDoor>();
         if (keyDoor != null)
         {
             if (ContainsKey(keyDoor.GetKeyType()))

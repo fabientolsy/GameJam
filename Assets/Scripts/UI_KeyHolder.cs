@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class UI_KeyHolder : MonoBehaviour
 {
-    [SerializeField] private KeuHolder keyHolder;
+    [SerializeField] private KeyHolder keyHolder;
     private Transform container;
     private Transform keyTemplate;
 
     private void Awake()
     {
-        container = trandorm.Find("container");
+        container = transform.Find("container");
         keyTemplate = container.Find("keyTemplate");
         keyTemplate.gameObject.SetActive(false);
     }
@@ -21,7 +21,7 @@ public class UI_KeyHolder : MonoBehaviour
         keyHolder.OnKeysChanged += KeyHolder_OnKeysChanged;
     }
 
-    private void KeyHolder_OnKeysChanged(object sender, System.EventArgs 0)
+    private void KeyHolder_OnKeysChanged(object sender, System.EventArgs e)
     {
         UpdateVisual();
     }
@@ -46,7 +46,8 @@ public class UI_KeyHolder : MonoBehaviour
             switch (keyType)
             {
                 default:
-                case Key.KeyType.Orange: keyImage.color = Color.orange;
+                case Key.KeyType.Green: 
+                    keyImage.color = Color.green;
                     break;
                 case Key.KeyType.Blue:
                     keyImage.color = Color.blue;
