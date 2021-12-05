@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class KeyHolder : MonoBehaviour
 {
+    public event EventHandler OnKeysChanged;
     private List<Key.KeyType> keyList;
 
     private void awake()
@@ -11,15 +13,22 @@ public class KeyHolder : MonoBehaviour
         keyList = new List<Key.KeyType>();
     }
 
+    public List<Key.KeyType> GetKeyList()
+    {
+        return keyList;
+    }
+
     public void AddKey(Key.KeyType keyType)
     {
         Debug.Log("Added Key: " + keyType);
         keyList.Add(keyType);
+        OnKeysChanged?.Invoke(this, EventArgs.Empty);
     }
 
     public void RemoveKey(Key.KeyType keyType)
     {
         keyList.Remove(keyType);
+        OnKeysChanged?.Invoke(this, EventArgs.Empty);
     }
 
     public bool ContainsKey(Key.KeyType keyType)
@@ -29,18 +38,19 @@ public class KeyHolder : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Key key = GetComponent<Collider>().GetComponent<key>();
+        Key key = GetComponent<Collider>().GetComponent<Key>();
         if (key != null)
         {
             AddKey(key.GetKeyType());
-            Destroy(key.gameObject);
         }
 
-        KeyDoor KeyDoor = GetComponent<Collider>().GetComponent<KeyDoor>();
-        if (KeyDoor != null)
+        KeyDoor keyDoor = GetComponent<Collider>().GetComponent<KeyDoor>();
+        if (keyDoor != null)
         {
-            KeyDoor.OpenDoor();
-            RemoveKey.OpenDoor();
+            if (ContainsKey(keyDoor.GetKeyType()))
+            {
+                keyDoor.OpenDoor();
+            }
         }
     }
 }

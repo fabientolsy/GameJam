@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 5107801526017165628}
   - component: {fileID: 5107801526017165631}
   m_Layer: 0
-  m_Name: DoorRed
+  m_Name: DoorOrange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
