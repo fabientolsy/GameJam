@@ -81,12 +81,12 @@ public class Grid : MonoBehaviour
                 GameObject randPrefabp4;
 
                 float PositionX2;
-                float PositionX3;
-                float PositionX4;
+                /*float PositionX3;
+                float PositionX4;*/
 
-                float PositionY2;
+                //float PositionY2;
                 float PositionY3;
-                float PositionY4;
+                //float PositionY4;
 
                 Vector2 ObjetPos2;
                 Vector2 ObjetPos3;
@@ -100,10 +100,10 @@ public class Grid : MonoBehaviour
                 Vector3 t_WordPos3;
                 Vector3 t_WordPos4;
 
-                switch (randPrefab)
+                switch (ObjetsAleatoire)
                 {
                     
-                    case RandomObject[0]:
+                    case 0:
                         randPrefab.transform.position = ObjetPos;
 
                         randPrefabp2 = RandomObject[1];
@@ -119,7 +119,7 @@ public class Grid : MonoBehaviour
 
                         return;
 
-                    case RandomObject[1]:
+                    case 1:
                         randPrefab.transform.position = ObjetPos;
 
                         randPrefabp2 = RandomObject[0];
@@ -134,7 +134,7 @@ public class Grid : MonoBehaviour
                         //Instantiate(RandomObject[ObjetsAleatoire], new Vector3(t_WorldPos.x, t_WorldPos.y, 0), transform.rotation).GetComponent<Tile>();
                         return;
 
-                    case RandomObject[2]:
+                    case 2:
                         randPrefab.transform.position = ObjetPos;
 
                         randPrefabp2 = RandomObject[3];
@@ -150,7 +150,7 @@ public class Grid : MonoBehaviour
 
                         return;
 
-                    case RandomObject[3]:
+                    case 3:
                         randPrefab.transform.position = ObjetPos;
 
                         randPrefabp2 = RandomObject[2];
@@ -165,7 +165,7 @@ public class Grid : MonoBehaviour
                         //Instantiate(RandomObject[ObjetsAleatoire], new Vector3(t_WorldPos.x, t_WorldPos.y, 0), transform.rotation).GetComponent<Tile>();
                         return;
 
-                    case RandomObject[4]: // Morceau de tapis bas droite
+                    case 4: // Morceau de tapis bas droite
                         randPrefab.transform.position = ObjetPos;
 
                         // Morceau bas gauche
@@ -203,7 +203,7 @@ public class Grid : MonoBehaviour
                         Instantiate(RandomObject[7], new Vector3(t_WordPos4.x, t_WordPos4.y,0), transform.rotation).GetComponent<Tile>();
                         return;
 
-                    case RandomObject[5]: // Morceau de tapis bas gauche
+                    case 5: // Morceau de tapis bas gauche
                         randPrefab.transform.position = ObjetPos;
 
                         // Morceau bas droite
@@ -241,7 +241,7 @@ public class Grid : MonoBehaviour
                         Instantiate(RandomObject[7], new Vector3(t_WorldPos.x, t_WordPos3.y, 0), transform.rotation).GetComponent<Tile>();
                         return;
 
-                    case RandomObject[6]: // Morceau de tapis haut droite
+                    case 6: // Morceau de tapis haut droite
                         randPrefab.transform.position = ObjetPos;
 
                         // Morceau haut gauche
@@ -280,7 +280,7 @@ public class Grid : MonoBehaviour
                         Instantiate(RandomObject[4], new Vector3(t_WorldPos.x, t_WordPos3.y, 0), transform.rotation).GetComponent<Tile>();
                         return;
 
-                    case RandomObject[7]: // Morceau de tapis haut gacuhe
+                    case 7: // Morceau de tapis haut gacuhe
                         randPrefab.transform.position = ObjetPos;
 
                         // Morceau haut droite
