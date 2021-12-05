@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class KeyDoor : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Key.KeyType keyType;
+
+    public Key.KeyType GetKeyType()
     {
-        
+        return keyType;
     }
 
-    // Update is called once per frame
-    void Update()
+    public voir OpenDoor()
     {
-        
+        SceneManager.LoadScene("Plateau1");
     }
 }
