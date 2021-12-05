@@ -11,13 +11,13 @@ public class KeyHolder : MonoBehaviour
         keyList = new List<Key.KeyType>();
     }
 
-    public void AddKey(Key.keyType keyType)
+    public void AddKey(Key.KeyType keyType)
     {
         Debug.Log("Added Key: " + keyType);
         keyList.Add(keyType);
     }
 
-    public void RemoveKey(Key.keyType keyType)
+    public void RemoveKey(Key.KeyType keyType)
     {
         keyList.Remove(keyType);
     }
