@@ -239,6 +239,85 @@ public class Grid : MonoBehaviour
 
                         // Morceau haut gauche
                         Instantiate(RandomObject[7], new Vector3(t_WorldPos.x, t_WordPos3.y, 0), transform.rotation).GetComponent<Tile>();
+                        return;
+
+                    case RandomObject[6]: // Morceau de tapis haut droite
+                        randPrefab.transform.position = ObjetPos;
+
+                        // Morceau haut gauche
+                        randPrefabp2 = RandomObject[7];
+
+                        // Morceau bas droite
+                        randPrefabp3 = RandomObject[4];
+
+                        // Morceau bas gauche
+                        randPrefabp4 = RandomObject[5];
+
+                        PositionX2 = PositionX - 1;
+                        PositionY3 = PositionY - 1;
+
+                        ObjetPos2 = new Vector2(PositionX2, PositionY);
+                        ObjetPos3 = new Vector2(PositionX, PositionY3);
+                        ObjetPos4 = new Vector2(PositionX2, PositionY3);
+
+                        t_GridPos2 = WorldToGrid(ObjetPos2);
+                        t_GridPos3 = WorldToGrid(ObjetPos3);
+                        t_GridPos4 = WorldToGrid(ObjetPos4);
+
+                        t_WordPos2 = GridToWorld(t_GridPos2);
+                        t_WordPos3 = GridToWorld(t_GridPos3);
+                        t_WordPos4 = GridToWorld(t_GridPos4);
+
+                        Instantiate(RandomObject[ObjetsAleatoire], new Vector3(t_WorldPos.x, t_WorldPos.y, 0), transform.rotation).GetComponent<Tile>();
+
+                        // Morceau haut gauche
+                        Instantiate(RandomObject[7], new Vector3(t_WordPos2.x, t_WorldPos.y, 0), transform.rotation).GetComponent<Tile>();
+
+                        // Morceau bas gauche
+                        Instantiate(RandomObject[5], new Vector3(t_WordPos4.x, t_WordPos4.y, 0), transform.rotation).GetComponent<Tile>();
+
+                        // Morceau bas droite
+                        Instantiate(RandomObject[4], new Vector3(t_WorldPos.x, t_WordPos3.y, 0), transform.rotation).GetComponent<Tile>();
+                        return;
+
+                    case RandomObject[7]: // Morceau de tapis haut gacuhe
+                        randPrefab.transform.position = ObjetPos;
+
+                        // Morceau haut droite
+                        randPrefabp2 = RandomObject[6];
+
+                        // Morceau bas droite
+                        randPrefabp3 = RandomObject[5];
+
+                        // Morceau bas gauche
+                        randPrefabp4 = RandomObject[4];
+
+                        PositionX2 = PositionX + 1;
+                        PositionY3 = PositionY - 1;
+
+                        ObjetPos2 = new Vector2(PositionX2, PositionY);
+                        ObjetPos3 = new Vector2(PositionX, PositionY3);
+                        ObjetPos4 = new Vector2(PositionX2, PositionY3);
+
+                        t_GridPos2 = WorldToGrid(ObjetPos2);
+                        t_GridPos3 = WorldToGrid(ObjetPos3);
+                        t_GridPos4 = WorldToGrid(ObjetPos4);
+
+                        t_WordPos2 = GridToWorld(t_GridPos2);
+                        t_WordPos3 = GridToWorld(t_GridPos3);
+                        t_WordPos4 = GridToWorld(t_GridPos4);
+
+                        Instantiate(RandomObject[ObjetsAleatoire], new Vector3(t_WorldPos.x, t_WorldPos.y, 0), transform.rotation).GetComponent<Tile>();
+
+                        // Morceau haut gauche
+                        Instantiate(RandomObject[6], new Vector3(t_WordPos2.x, t_WorldPos.y, 0), transform.rotation).GetComponent<Tile>();
+
+                        // Morceau bas gauche
+                        Instantiate(RandomObject[4], new Vector3(t_WordPos4.x, t_WordPos4.y, 0), transform.rotation).GetComponent<Tile>();
+
+                        // Morceau bas droite
+                        Instantiate(RandomObject[5], new Vector3(t_WorldPos.x, t_WordPos3.y, 0), transform.rotation).GetComponent<Tile>();
+                        return;
 
                     default:
                         randPrefab.transform.position = ObjetPos;
