@@ -11,7 +11,7 @@ public class KeyDoor : MonoBehaviour
         return keyType;
     }
 
-    public voir OpenDoor()
+    public void OpenDoor()
     {
         SceneManager.LoadScene("Plateau1");
     }
