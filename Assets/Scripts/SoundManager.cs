@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public static AudioClip mainSound;
+    public static AudioClip doorSound;
     static AudioSource audioSrc;
 
     // Start is called before the first frame update
     void Start()
     {
-        mainSound = Resources.Load<AudioClip>("MainSound");
+        doorSound = Resources.Load<AudioClip>("Door");
 
         audioSrc = GetComponent<AudioSource>();
     }
@@ -19,8 +19,8 @@ public class SoundManager : MonoBehaviour
     {
         switch (clip)
         {
-            case "MainSound":
-                //audioSrc.PLayS
+            case "Door":
+                audioSrc.PlayOneShot(doorSound);
                 break;
         }
     }

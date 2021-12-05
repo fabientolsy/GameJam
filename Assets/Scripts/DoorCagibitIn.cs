@@ -7,6 +7,7 @@ public class DoorCagibitIn : MonoBehaviour
 {
     public void OpenDoorCagibitIn()
     {
+        SoundManager.PlaySound("Door");
         SceneManager.LoadScene("Plateau2");
     }
 }
