@@ -202,8 +202,6 @@ public class Grid : MonoBehaviour
                         // Morceau haut gauche
                         Instantiate(RandomObject[7], new Vector3(t_WordPos2.x, t_WordPos3.y,0), transform.rotation).GetComponent<Tile>();
 
-                    //TODO tout instentier
-
                     default:
                         randPrefab.transform.position = ObjetPos;
                         Tile tileAdd = Instantiate(RandomObject[ObjetsAleatoire], new Vector3(t_WorldPos.x, t_WorldPos.y, 0), transform.rotation).GetComponent<Tile>();
