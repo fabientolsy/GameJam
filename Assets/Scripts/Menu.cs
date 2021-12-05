@@ -10,6 +10,7 @@ public class Menu : MonoBehaviour
 
     private void Start()
     {
+        SoundManager.PlaySound("MainSound");
         textTitre.text = ("Free Guy !");
     }
 
