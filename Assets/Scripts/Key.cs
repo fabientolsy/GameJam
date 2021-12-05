@@ -8,13 +8,12 @@ public class Key : MonoBehaviour
 
     public enum KeyType
     {
-        Orange,
         Green,
         Blue
     }
 
     public KeyType GetKeyType()
     {
-        return KeyType;
+        return keyType;
     }
 }

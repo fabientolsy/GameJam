@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -18580,17 +18580,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 540000441, guid: 7db6333b5425fef428b14d23e3946ef9, type: 3}
+      propertyPath: m_Color.b
+      value: 0.023381427
+      objectReference: {fileID: 0}
+    - target: {fileID: 540000441, guid: 7db6333b5425fef428b14d23e3946ef9, type: 3}
+      propertyPath: m_Color.g
+      value: 0.745283
+      objectReference: {fileID: 0}
+    - target: {fileID: 540000441, guid: 7db6333b5425fef428b14d23e3946ef9, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5107801526017165628, guid: 7db6333b5425fef428b14d23e3946ef9, type: 3}
       propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5107801526017165628, guid: 7db6333b5425fef428b14d23e3946ef9, type: 3}
       propertyPath: m_Color.g
-      value: 0.5944522
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5107801526017165628, guid: 7db6333b5425fef428b14d23e3946ef9, type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.062137604
       objectReference: {fileID: 0}
     - target: {fileID: 5107801526017165629, guid: 7db6333b5425fef428b14d23e3946ef9, type: 3}
       propertyPath: m_RootOrder
@@ -18638,7 +18650,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5107801526017165630, guid: 7db6333b5425fef428b14d23e3946ef9, type: 3}
       propertyPath: m_Name
-      value: DoorOrange
+      value: DoorGreen
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5107801526017165628, guid: 7db6333b5425fef428b14d23e3946ef9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7db6333b5425fef428b14d23e3946ef9, type: 3}
