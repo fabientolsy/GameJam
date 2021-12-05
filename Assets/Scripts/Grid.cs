@@ -47,20 +47,50 @@ public class Grid : MonoBehaviour
             Vector2Int t_GridPos = WorldToGrid(ObjetPos);
             Vector3 t_WorldPos = GridToWorld(t_GridPos);
 
-            int ObjetsAleatoire = Random.Range(0, Objets.Length);
+            Tile t_tileWMur = GetTile(t_GridPos);
 
-            GameObject randPrefab = Objets[ObjetsAleatoire];
-            randPrefab.transform.position = ObjetPos;
-            Tile tileAdd = Instantiate(Objets[ObjetsAleatoire], new Vector3(t_WorldPos.x, t_WorldPos.y, 0), transform.rotation).GetComponent<Tile>();
-            tileAdd.x = (uint)t_GridPos.x;
-            tileAdd.y = (uint)t_GridPos.y;
+            if (t_tileWMur != AvaileTuiles[0])
+            {
 
-           m_Tiles.Add(tileAdd);
+                int ObjetsAleatoire = Random.Range(0, Objets.Length);
 
-            Tile s_tuile = GetTile(t_GridPos);
-            m_Tiles.Remove(s_tuile);
-            Destroy(s_tuile.gameObject);
-            Debug.Log(s_tuile.gameObject);            
+                if (t_WorldPos.x == ColumnCount || t_WorldPos.x == ColumnCount - 1)
+                {
+                    t_WorldPos.x = t_WorldPos.x - 3;
+                }
+
+                if (t_WorldPos.x == 0 || t_WorldPos.x == 1)
+                {
+                    t_WorldPos.x = t_WorldPos.x + 3;
+                }
+
+                if (t_WorldPos.y == RowCount || t_WorldPos.y == RowCount - 1)
+                {
+                    t_WorldPos.y = t_WorldPos.y - 3;
+                }
+
+                if (t_WorldPos.y == 0 || t_WorldPos.y == 1)
+                {
+                    t_WorldPos.y = t_WorldPos.y + 3;
+                }
+
+                GameObject randPrefab = Objets[ObjetsAleatoire];
+                randPrefab.transform.position = ObjetPos;
+                Tile tileAdd = Instantiate(Objets[ObjetsAleatoire], new Vector3(t_WorldPos.x, t_WorldPos.y, 0), transform.rotation).GetComponent<Tile>();
+                tileAdd.x = (uint)t_GridPos.x;
+                tileAdd.y = (uint)t_GridPos.y;
+
+                m_Tiles.Add(tileAdd);
+
+                Tile s_tuile = GetTile(t_GridPos);
+                m_Tiles.Remove(s_tuile);
+                Destroy(s_tuile.gameObject);
+                Debug.Log(s_tuile.gameObject);
+            }
+            else
+            {
+                return;
+            }
         }
     }
 
