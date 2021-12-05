@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4800655994352408772}
   - component: {fileID: -4216915877637254684}
   - component: {fileID: -4704338565518904159}
+  - component: {fileID: -1615882972160656385}
   m_Layer: 0
   m_Name: Perso
   m_TagString: Untagged
@@ -147,3 +148,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.0001, y: 0.0001}
   m_EdgeRadius: 0
+--- !u!114 &-1615882972160656385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4800655994352408771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebbd3536ba824dd45b0345c251971835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
