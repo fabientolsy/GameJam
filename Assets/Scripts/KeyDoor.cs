@@ -18,10 +18,6 @@ public class KeyDoor : MonoBehaviour
     
     public void OpenDoor()
     {
-        GameObject[] objs = GameObject.FindGameObjectsWithTag("Player");
-
-        DontDestroyOnLoad(this.gameObject);
-
         playerStorage.initialValue = playerPosition;
         SoundManager.PlaySound("Door");
         SceneManager.LoadScene(sceneToLoad);
