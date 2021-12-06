@@ -8,7 +8,12 @@ public class KeyHolder : MonoBehaviour
     public event EventHandler OnKeysChanged;
     private List<Key.KeyType> keyList;
 
-    private void awake()
+    /*private void awake()
+    {
+        keyList = new List<Key.KeyType>();
+    }*/
+
+    private void Start()
     {
         keyList = new List<Key.KeyType>();
     }
@@ -16,7 +21,7 @@ public class KeyHolder : MonoBehaviour
     public List<Key.KeyType> GetKeyList()
     {
         return keyList;
-    }
+    } 
 
     public void AddKey(Key.KeyType keyType)
     {
@@ -42,19 +47,24 @@ public class KeyHolder : MonoBehaviour
         Key key = collider.GetComponent<Key>();
         if (key != null)
         {
-            AddKey(key.GetKeyType());
-            Destroy(key.gameObject);
+            
             Debug.Log("G la cleeeee");
+            Destroy(key.gameObject);
+            AddKey(key.GetKeyType());
         }
 
         KeyDoor keyDoor = collider.GetComponent<KeyDoor>();
         if (keyDoor != null)
         {
-            Debug.Log("");
+            Debug.Log("yessss");
             if (ContainsKey(keyDoor.GetKeyType()))
             {
                 Debug.Log("JE ME TP");
-                keyDoor.OpenDoor();
+                keyDoor.OpenDoor(); 
+            }
+            else
+            {
+                Debug.Log("pas tp");
             }
         }
 
