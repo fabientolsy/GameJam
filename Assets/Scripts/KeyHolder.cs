@@ -49,7 +49,7 @@ public class KeyHolder : MonoBehaviour
         {
             
             Debug.Log("G la cleeeee");
-            Destroy(key.gameObject);
+            //Destroy(key.gameObject);
             AddKey(key.GetKeyType());
         }
 
