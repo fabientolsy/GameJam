@@ -2,20 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 public class KeyHolder : MonoBehaviour
 {
-    public string sceneToLoad;
-    public Vector2 playerPosition;
-    public VectorValue playerStorage;
 
     public event EventHandler OnKeysChanged;
     private List<Key.KeyType> keyList;
 
-    /*private void awake()
+    private void awake()
     {
-        keyList = new List<Key.KeyType>();
-    }*/
+
+    }
 
     private void Start()
     {
@@ -74,6 +72,15 @@ public class KeyHolder : MonoBehaviour
 
         DoorCagibitIn doorCagibitin = collider.gameObject.GetComponent<DoorCagibitIn>();
         DoorCagibit doorCagibit = collider.gameObject.GetComponent<DoorCagibit>();
+
         DoorRoom doorRoom = collider.gameObject.GetComponent<DoorRoom>();
+        if (doorRoom != null)
+        {
+            doorRoom.OpenDoorRoom();
+        }
+        else
+        {
+            doorRoom.OpenDoorRoom();
+        }
     }
 }

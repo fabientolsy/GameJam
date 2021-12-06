@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitName: Patrick
   unitLevel: 2
-  damage: 5
+  damage: 4
   maxHP: 30
   currentHP: 30
 --- !u!1 &8218196869178491226

@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitName: Zazouille
   unitLevel: 2
-  damage: 5
+  damage: 6
   maxHP: 30
   currentHP: 30
 --- !u!1 &3511615293074687545

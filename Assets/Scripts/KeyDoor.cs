@@ -8,6 +8,7 @@ public class KeyDoor : MonoBehaviour
     public string sceneToLoad;
     public Vector2 playerPosition;
     public VectorValue playerStorage;
+
     [SerializeField] private Key.KeyType keyType;
 
     public Key.KeyType GetKeyType()
@@ -17,6 +18,10 @@ public class KeyDoor : MonoBehaviour
     
     public void OpenDoor()
     {
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("Player");
+
+        DontDestroyOnLoad(this.gameObject);
+
         playerStorage.initialValue = playerPosition;
         SoundManager.PlaySound("Door");
         SceneManager.LoadScene(sceneToLoad);

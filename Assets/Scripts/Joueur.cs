@@ -23,15 +23,22 @@ public class Joueur : MonoBehaviour
     private Grid m_Grid;
     private Pathfinder m_Pathfinder;
 
-
+    public VectorValue startingPosition;
 
 
 
     private void Awake()
     {
         m_AS = gameObject.gameObject.GetComponent<AudioSource>();
-        
 
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("Player");
+
+        if (objs.Length > 1)
+        {
+            Destroy(this.gameObject);
+        }
+
+        DontDestroyOnLoad(this.gameObject);
     }
 
     private void Start()
@@ -43,6 +50,7 @@ public class Joueur : MonoBehaviour
         Depart.transform.position = gameObject.GetComponent<Transform>().position;
         m_Grid = GameObject.Find("Grid").GetComponent<Grid>();
         m_Pathfinder = m_Grid.GetComponent<Pathfinder>();
+        transform.position = startingPosition.initialValue;
     }
 
     private void Update()

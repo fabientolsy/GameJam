@@ -28,6 +28,7 @@ public class Grid : MonoBehaviour
 
     private void Awake()
     {
+
         m_Tiles = GetComponentsInChildren<Tile>().ToList();
 
         foreach (var t in m_Tiles)
