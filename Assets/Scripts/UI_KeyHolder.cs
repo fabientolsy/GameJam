@@ -6,14 +6,14 @@ using UnityEngine.UI;
 public class UI_KeyHolder : MonoBehaviour
 {
     [SerializeField] private KeyHolder keyHolder;
-    private Transform container;
-    private Transform keyTemplate;
+    private Transform Container;
+    private Transform KeyTemplate;
 
     private void Awake()
     {
-        container = transform.Find("container");
-        keyTemplate = container.Find("keyTemplate");
-        keyTemplate.gameObject.SetActive(false);
+        Container = transform.Find("Container");
+        KeyTemplate = Container.Find("KeyTemplate");
+        KeyTemplate.gameObject.SetActive(false);
     }
 
     private void Start()
@@ -28,9 +28,9 @@ public class UI_KeyHolder : MonoBehaviour
 
     private void UpdateVisual()
     {
-        foreach(Transform child in container)
+        foreach(Transform child in Container)
         {
-            if (child == keyTemplate) continue;
+            if (child == KeyTemplate) continue;
             {
                 Destroy(child.gameObject);
             }
@@ -40,7 +40,7 @@ public class UI_KeyHolder : MonoBehaviour
         for (int i = 0; i < keyList.Count; i++)
         {
             Key.KeyType keyType = keyList[i];
-            Transform keyTransform = Instantiate(keyTemplate, container);
+            Transform keyTransform = Instantiate(KeyTemplate, Container);
             keyTransform.GetComponent<RectTransform>().anchoredPosition = new Vector2(50 * i, 0);
             Image keyImage = keyTransform.Find("image").GetComponent<Image>();
             switch (keyType)
