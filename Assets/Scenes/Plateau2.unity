@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10348,6 +10348,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 5107801526017165631, guid: 7db6333b5425fef428b14d23e3946ef9, type: 3}
+      propertyPath: m_Size.y
+      value: 0.7893216
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107801526017165631, guid: 7db6333b5425fef428b14d23e3946ef9, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.08111486
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7db6333b5425fef428b14d23e3946ef9, type: 3}
 --- !u!1 &1192726455 stripped
@@ -18822,6 +18830,14 @@ PrefabInstance:
     - target: {fileID: 5107801526017165630, guid: 7db6333b5425fef428b14d23e3946ef9, type: 3}
       propertyPath: m_Name
       value: DoorGreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107801526017165631, guid: 7db6333b5425fef428b14d23e3946ef9, type: 3}
+      propertyPath: m_Size.y
+      value: 0.84328413
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107801526017165631, guid: 7db6333b5425fef428b14d23e3946ef9, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.11432445
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5107801526017165628, guid: 7db6333b5425fef428b14d23e3946ef9, type: 3}
