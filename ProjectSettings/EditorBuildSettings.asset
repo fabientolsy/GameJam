@@ -18,6 +18,12 @@ EditorBuildSettings:
     path: Assets/Scenes/CabaneJardin.unity
     guid: 80f99b151826c994daf48db604343a66
   - enabled: 1
+    path: Assets/Scenes/OutsideScene.unity
+    guid: a2b94e82acce5e2409df052383c34ffb
+  - enabled: 1
+    path: Assets/Scenes/Fight.unity
+    guid: 9f38cd02faf347a46b0ff1c0995f5ca8
+  - enabled: 1
     path: Assets/Scenes/GameOverMenu.unity
     guid: 9be3ce0777c1fae47a607b1c71867062
   m_configObjects: {}
