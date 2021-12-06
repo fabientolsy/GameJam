@@ -7237,6 +7237,7 @@ GameObject:
   m_Component:
   - component: {fileID: 695575665}
   - component: {fileID: 695575664}
+  - component: {fileID: 695575666}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -7474,30 +7475,6 @@ Transform:
   - {fileID: 1441588357}
   - {fileID: 283795802}
   - {fileID: 356867001}
-  - {fileID: 174855643}
-  - {fileID: 763674834}
-  - {fileID: 853578260}
-  - {fileID: 621890308}
-  - {fileID: 83510360}
-  - {fileID: 638811483}
-  - {fileID: 1173629406}
-  - {fileID: 890039327}
-  - {fileID: 1360267244}
-  - {fileID: 1658037247}
-  - {fileID: 1498463538}
-  - {fileID: 727040405}
-  - {fileID: 1784021552}
-  - {fileID: 853811290}
-  - {fileID: 266986992}
-  - {fileID: 1584270267}
-  - {fileID: 144511298}
-  - {fileID: 1898996087}
-  - {fileID: 1282615507}
-  - {fileID: 1614659872}
-  - {fileID: 547610771}
-  - {fileID: 610717756}
-  - {fileID: 1319579505}
-  - {fileID: 1268132725}
   - {fileID: 2074596188}
   - {fileID: 2090405573}
   - {fileID: 1433378418}
@@ -7527,9 +7504,47 @@ Transform:
   - {fileID: 1629476564}
   - {fileID: 773814817}
   - {fileID: 1210104610}
+  - {fileID: 174855643}
+  - {fileID: 763674834}
+  - {fileID: 853578260}
+  - {fileID: 621890308}
+  - {fileID: 83510360}
+  - {fileID: 638811483}
+  - {fileID: 1173629406}
+  - {fileID: 890039327}
+  - {fileID: 1360267244}
+  - {fileID: 1658037247}
+  - {fileID: 1498463538}
+  - {fileID: 727040405}
+  - {fileID: 1784021552}
+  - {fileID: 853811290}
+  - {fileID: 266986992}
+  - {fileID: 1584270267}
+  - {fileID: 144511298}
+  - {fileID: 1898996087}
+  - {fileID: 1282615507}
+  - {fileID: 1614659872}
+  - {fileID: 547610771}
+  - {fileID: 610717756}
+  - {fileID: 1319579505}
+  - {fileID: 1268132725}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &695575666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695575663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 906c5551fa999e848b5b9c7c56a81223, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gold: 100
+  VieJoueur: 5
 --- !u!1001 &701889175
 PrefabInstance:
   m_ObjectHideFlags: 0
