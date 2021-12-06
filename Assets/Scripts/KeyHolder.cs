@@ -5,6 +5,10 @@ using System;
 
 public class KeyHolder : MonoBehaviour
 {
+    public string sceneToLoad;
+    public Vector2 playerPosition;
+    public VectorValue playerStorage;
+
     public event EventHandler OnKeysChanged;
     private List<Key.KeyType> keyList;
 

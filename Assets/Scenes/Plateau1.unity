@@ -5366,6 +5366,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29696694fa18864e805fc98fb3348a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneToLoad: Plateau2
+  playerPosition: {x: 9.5, y: 13.5}
+  playerStorage: {fileID: 11400000, guid: c06cb137c161006419d1c3a39aedc07b, type: 2}
   keyType: 0
 --- !u!4 &579947001 stripped
 Transform:
@@ -18058,6 +18061,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29696694fa18864e805fc98fb3348a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneToLoad: 
+  playerPosition: {x: 0, y: 0}
+  playerStorage: {fileID: 0}
   keyType: 1
 --- !u!212 &2117650499
 SpriteRenderer:
@@ -18417,6 +18423,34 @@ PrefabInstance:
     - target: {fileID: -4704338565518904159, guid: 929dd0e7a862cda42a9ef05240dc3716, type: 3}
       propertyPath: m_IsTrigger
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4704338565518904159, guid: 929dd0e7a862cda42a9ef05240dc3716, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -4704338565518904159, guid: 929dd0e7a862cda42a9ef05240dc3716, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -4704338565518904159, guid: 929dd0e7a862cda42a9ef05240dc3716, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 1.3883333
+      objectReference: {fileID: 0}
+    - target: {fileID: -4704338565518904159, guid: 929dd0e7a862cda42a9ef05240dc3716, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1.39
+      objectReference: {fileID: 0}
+    - target: {fileID: -4704338565518904159, guid: 929dd0e7a862cda42a9ef05240dc3716, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.3883333
+      objectReference: {fileID: 0}
+    - target: {fileID: -4704338565518904159, guid: 929dd0e7a862cda42a9ef05240dc3716, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.39
+      objectReference: {fileID: 0}
+    - target: {fileID: -4704338565518904159, guid: 929dd0e7a862cda42a9ef05240dc3716, type: 3}
+      propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4206636613815207124, guid: 929dd0e7a862cda42a9ef05240dc3716, type: 3}
       propertyPath: m_Constraints
