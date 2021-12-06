@@ -11,7 +11,7 @@ public class Menu : MonoBehaviour
     private void Start()
     {
         SoundManager.PlaySound("MainSound");
-        textTitre.text = ("Free Guy !");
+        //textTitre.text = ("Free Guy !");
     }
 
     public void BoutonJouer()

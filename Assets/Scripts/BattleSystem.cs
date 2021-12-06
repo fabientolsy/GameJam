@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST }
 
@@ -100,11 +102,15 @@ public class BattleSystem : MonoBehaviour
 	{
 		if (state == BattleState.WON)
 		{
-			dialogueText.text = "You won the battle!";
+			dialogueText.text = "Tu as gagne !";
+			Thread.Sleep(3000);
+			SceneManager.LoadScene("FinJeu");
 		}
 		else if (state == BattleState.LOST)
 		{
-			dialogueText.text = "You were defeated.";
+			dialogueText.text = "Perdu !";
+			Thread.Sleep(3000);
+			SceneManager.LoadScene("GameOverMenu");
 		}
 	}
 
