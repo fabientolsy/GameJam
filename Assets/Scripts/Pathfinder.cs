@@ -61,6 +61,8 @@ public class Pathfinder : MonoBehaviour
             return null;
         }
 
+        Debug.Log("GetPath");
+
         List<Node> t_openList = new List<Node>();
         List<Node> t_closedList = new List<Node>();
 

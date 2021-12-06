@@ -54,7 +54,7 @@ public class Joueur : MonoBehaviour
             // Trouver la position cliquee 
             //Vector3 t_ClickPos = HandleUtility.GUIPointToWorldRay(Event.current.mousePosition).origin;
             Vector3 t_ClickPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Debug.Log(Input.mousePosition);
+            Debug.Log("Position cliquee "+Input.mousePosition);
             Debug.Log("Joueur Update" + t_ClickPos);
 
             // Transformer la position dans le monde de la scene en position dans la grille
@@ -70,7 +70,7 @@ public class Joueur : MonoBehaviour
                 throw new GridException("Selected out of bounds !");
 
             Arrivee = t_WorldPos;
-
+            
             CalculatePath();
         }
 
@@ -135,8 +135,12 @@ public class Joueur : MonoBehaviour
 
     private void CalculatePath()
     {
+        Debug.Log("CalculatePath");
+
         Tile t_StartTile = m_Grid.GetTile(m_Grid.WorldToGrid(transform.position));
+        Debug.Log("t_StartTile = " + t_StartTile);
         Tile t_EndTile = m_Grid.GetTile(m_Grid.WorldToGrid(Arrivee));
+        Debug.Log(t_EndTile);
 
         CurrentPath = m_Pathfinder.GetPath(t_StartTile, t_EndTile, true);
         Debug.Log(CurrentPath);
